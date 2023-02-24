@@ -224,7 +224,7 @@ section .contacts {
   }
   .container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)),
-      url(IMG_2225.jpg);
+      url(images/IMG_2225.jpg);
     width: 100%;
     height: 80vh;
     background-position: center;
