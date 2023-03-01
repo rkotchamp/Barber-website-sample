@@ -45,6 +45,9 @@ nav a {
   color: rgb(231, 231, 231);
   text-transform: capitalize;
 }
+.hidden {
+  display: none;
+}
 
 .header .socials {
   margin-left: 150px;
@@ -73,17 +76,6 @@ nav a {
   border-radius: 7px;
   margin-right: 15px;
 }
-
-/* .burger {
-  display: none;
-}
-
-.burger div {
-  width: 35px;
-  height: 3px;
-  background-color: wheat;
-  margin: 5px;
-} */
 
 .fa-regular {
   width: 20px;
@@ -190,24 +182,60 @@ section .contacts {
 
 /*setting media queries*/
 @media only screen and (max-width: 600px) {
-  .topNav li {
+  body {
+    overflow-x: hidden;
+  }
+  .hidden {
     display: none;
   }
-  .fa-regular {
+  .fa-bars {
     width: 20px;
     border: 1px solid white;
-    margin-right: 15px;
     margin-top: 5px;
     display: list-item;
+    cursor: pointer;
   }
-  .header .nav-button {
-    display: none;
-  }
+
   .header img {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    margin-right: 200px;
+  }
+
+  /* styling the socials */
+  .socials {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100%;
+    max-width: 600px;
+    z-index: 1;
+  }
+  .timesButton {
+    color: #fff;
+    margin: auto 450px;
+    font-size: 40px;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+  }
+  .header .fa-brands {
+    padding-right: 25px;
+    font-size: medium;
+    color: rgb(231, 231, 231);
+    margin: 500px auto;
+    left: 0;
+  }
+
+  nav .burgerNav {
+    display: flex;
+    flex-direction: column;
+    /* padding: 100px; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .burgerNav li {
+    padding: 20px;
   }
 
   .content-and-button h1 {
@@ -218,9 +246,14 @@ section .contacts {
     border: 1px solid rgb(250, 208, 112);
     padding: 10px 15px;
     background-color: rgb(250, 208, 112);
-    margin-top: 15px;
+    margin-top: 20px;
     border-radius: 8px;
     position: absolute;
+    margin-left: 40%;
+    left: 0;
+    right: 0;
+    max-width: 600px;
+    width: 25%;
   }
   .container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)),
@@ -229,10 +262,48 @@ section .contacts {
     height: 100vh;
     background-position: center;
     background-size: cover;
+    z-index: -1;
   }
   section .h-vibe {
     text-align: center;
     margin-top: 400px;
     font-size: 40px;
+  }
+
+  section .p-vibe {
+    font-size: 15px;
+    max-width: 100px;
+    /* width: 50%; */
+    left: 0;
+    right: 0;
+    max-width: 600px;
+    width: 50%;
+    margin-left: 12px;
+    margin-left: 130px;
+    text-align: end;
+  }
+
+  .contacts {
+    max-width: 600px;
+    margin: auto 40px;
+    font-size: 12px;
+  }
+
+  .hours {
+    margin: auto 0px;
+  }
+
+  .vibe .button {
+    border: 1px solid rgb(250, 208, 112);
+    padding: 10px 50px;
+    border-radius: 10px;
+    background-color: rgb(250, 208, 112);
+    margin-top: 5%;
+    margin-bottom: 100px;
+    margin-left: 25%;
+    left: 0;
+    right: 0;
+    max-width: 600px;
+    width: 50%;
   }
 }
