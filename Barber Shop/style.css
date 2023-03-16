@@ -192,6 +192,15 @@ section .contacts {
   .hidden {
     display: none;
   }
+  .navMenu .topNav{
+    display: none;
+  }
+
+  .mediaHandles {
+    padding-right: 25px;
+    font-size: medium;
+    color: rgb(231, 231, 231);
+  }
   .fa-bars {
     width: 20px;
     border: 1px solid white;
@@ -204,6 +213,9 @@ section .contacts {
     width: 150px;
     height: 150px;
     object-fit: cover;
+    margin-left: 0;
+    margin-right: 200px;
+
   }
 
   /* styling the socials */
@@ -253,6 +265,9 @@ section .contacts {
     /* padding: 100px; */
     justify-content: center;
     align-items: center;
+   right: 0;
+   left: 0;
+    
   }
 
   .burgerNav li {
@@ -345,4 +360,15 @@ section .contacts {
     background-color: rgb(238, 216, 167);
     color: black;
   }
+  .mediaHandles{
+  align-items: center;
+  margin-top: 120px;
+  margin-left: 230px;
+}
+.mediaHandles .fa-brands{
+  padding-right: 20px;
+  cursor: pointer;
+}
+.mediaHandles .fa-brands:hover{
+  color: rgb(243, 222, 173);
 }
